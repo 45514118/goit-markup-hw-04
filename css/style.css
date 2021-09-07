@@ -11,8 +11,8 @@
   --accent-button-color: #188ce8;
   --primary-border-color: #ececec;
   --secondary-border-color: #eeeeee;
-  --icon-primary-color: #afb1b8;
-  --icon-accent-color: #2196f3;
+  --partner-logo-primary-color: #afb1b8;
+  --partner-logo-accent-color: #2196f3;
 }
 body {
   font-family: 'Roboto', Arial, sans-serif;
@@ -142,6 +142,10 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
+}
+.contact-icon {
+  margin-right: 10px;
 }
 .footer-contact-link {
   font-weight: 500;
@@ -153,6 +157,7 @@ img {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 .footer-contact-link:hover,
 .footer-contact-link:focus {
@@ -184,6 +189,8 @@ img {
   font-weight: 500;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
 .current > .filter-button {
@@ -335,15 +342,15 @@ img {
 .partners-link {
   width: 170px;
   height: 92px;
-  border: 1px solid var(--icon-primary-color);
+  border: 1px solid var(--partner-logo-primary-color);
   border-radius: 4px;
   justify-content: center;
-  fill: var(--icon-primary-color);
+  fill: var(--partner-logo-primary-color);
 }
 .partners-link:hover,
 .partners-link:focus {
-  border: 1px solid var(--icon-accent-color);
-  fill: var(--icon-accent-color);
+  border: 1px solid var(--partner-logo-accent-color);
+  fill: var(--partner-logo-accent-color);
 }
 /* Footer */
 .site-footer {
